@@ -1,0 +1,25 @@
+{
+  "name": "signed-course-contract-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/contract_service.ts",
+    "example": "tsx src/sign_contract_example.ts",
+    "test": "tsx --test test/contract_signing.test.ts",
+    "typecheck": "tsc --noEmit",
+    "prepare:demo": "tsx scripts/prepare-demo.ts",
+    "cleanup": "tsx src/cleanup_example.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
